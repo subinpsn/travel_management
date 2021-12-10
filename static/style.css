@@ -1,0 +1,148 @@
+body {
+  font-size: 20px;
+  background-color: #BFEEBE;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+/* index */
+.links{
+    text-align: center;
+}
+.links a {
+    padding: 10px;
+}
+
+ul.horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding: 10px;
+    border-radius: 2px;
+    background: #e0e0e0;
+    box-shadow:  8px 8px 43px #7d7d7d,
+             -8px -8px 43px #ffffff;
+
+}
+
+ul.horizontal-list li {
+    display: inline;
+    padding-left: 20px;
+}
+
+ul.horizontal-list li.nav-name{
+    padding-right: 580px;
+    font-size: 20px;
+}
+
+.booking-buttons{
+    padding-right: 50px;
+    text-align: center;
+    margin-top: 400px;
+}
+.booking-buttons ul.horizontal-list li {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#top{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*login page*/
+.login_sec{
+    padding: 20px 20px 150px;
+    margin: 0px 450px;
+    border-radius: 27px;
+    background: #e0e0e0;
+    box-shadow:  24px 24px 27px #828282,
+             -24px -24px 27px #ffffff;
+}
+.login_sec .content{
+    padding-top: 100px;
+    text-align: center;
+}
+.page-heading,.subheading{
+    text-align: center;
+}
+
+/* Register page */
+.register_sec{
+    padding: 20px 10px 150px;
+    margin: 0px 450px;
+    border-radius: 27px;
+    background: #e0e0e0;
+    box-shadow:  24px 24px 27px #828282,
+             -24px -24px 27px #ffffff;
+}
+.register_sec .content{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* About */
+.about_heading{
+    text-align: center;
+    font-size:10px;
+    padding: 20px;
+}
+.about_content{
+    margin: 10px 400px;
+    padding: 20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.76);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+      -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
+
+/* Contact */
+.contact_heading{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+.contact_content{
+    padding: 20px 10px 150px;
+    margin: 0px 450px;
+    text-align: center;
+    border-radius: 27px;
+    background: #e0e0e0;
+    box-shadow:  24px 24px 27px #828282,
+             -24px -24px 27px #ffffff;
+}
+
+/* receipt */
+/*p {
+    align-content: center;
+    background-color: #F7F7F7;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+}*/
+/* confirm booking */
+#cancel {
+    padding: 460px;
+}
+
+h2{
+    padding-top: 200px;
+    text-align: center;
+}
+/* receipt */
+#pay_sucess{
+    padding-left:625px;
+}
+
+
+
+
+#bottom{
+    background-color: #F7F7F7;
+    padding-left: 600px;
+    padding-bottom: 100px;
+    padding-top: 80px;
+}

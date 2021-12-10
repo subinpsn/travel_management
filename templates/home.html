@@ -1,0 +1,28 @@
+{% block content %}
+{% include "header.html" %}
+<body>
+<!--    <h1>HOME</h1>-->
+<!--    <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a><br>-->
+    <div class="booking-buttons">
+<!--        {% if not current_user.is_authenticated:  %}-->
+        <form action="{{ url_for('booking') }}" methods="POST">
+            <ul class="horizontal-list">
+                <li class="nav-item">
+                    <input type="submit" value="CAR BOOKING"/>
+                </li>
+                <li class="nav-item">
+                    <input type="submit" value="BUS BOOKING"/>
+                </li>
+                <li class="nav-item">
+                    <input type="submit" value="TRAIN BOOKING"/>
+                </li>
+            </ul>
+        </form>
+<!--        {% else: %}-->
+<!--        <h3>login for continue booking</h3>-->
+<!--        {% endif %}-->
+    </div>
+</body>
+
+{% include "footer.html" %}
+{% endblock %}

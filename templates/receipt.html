@@ -1,0 +1,12 @@
+{% block content %}
+{% include "header.html" %}
+<body>
+    <h2>{{message}}</h2>
+    <div id="pay_sucess">
+        <form action="{{ url_for('conform_booking') }}" methods="GET">
+            <input type="submit" value="Continue"/>
+        </form>
+    </div>
+{% endblock %}
+</body>
+</html>

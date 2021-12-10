@@ -1,0 +1,18 @@
+{% block content %}
+{% include "header.html" %}
+<body>
+    <p> <b>Name:</b>{{Name}}<br><br>
+        <b>Email:</b>{{Email}}<br><br>
+        <b>Phone Number:</b>{{Phone_num}}<br><br>
+        <b>Passengers:</b>{{Pssg}}<br><br>
+        <b>Origin:</b>{{Origin}}<br><br>
+        <b>Destination:</b>{{Destination}}<br><br>
+        <b>Time:</b>{{Time}}<br><br>
+        <b>Date:</b>{{Date}}<br><br>
+        <b>Status:</b>Booked<br>
+    </p>
+
+    <a id="cancel" href="{{ url_for('booking_cancelation') }}">Cancel Booking</a>
+{% endblock %}
+</body>
+</html>

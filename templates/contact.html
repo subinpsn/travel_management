@@ -1,0 +1,19 @@
+{% block content %}
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+<body>
+    <div class="contact_heading">
+        <h3>Contact Our Agency</h3>
+    </div>
+    <div class="contact_content">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter Name" name="name" id="name" required><br><br>
+            <label>Email:</label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required><br><br>
+            <label>Comment:</label>
+            <input type="text" placeholder="Enter Your Message" name="message" id="message" required><br><br>
+            <button>submit</button>
+    </div>
+</body>
+{% endblock %}
+</html>

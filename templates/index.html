@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Travel Management System
+        </title>
+
+        <!-- Custom styles for this template -->
+        <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <h2>
+            WELCOME TO AJ TRAVELS BOOKING SYSTEM
+        </h2>
+        <div class="links">
+            <a href="{{ url_for('register') }}">Register</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </body>
+</html>

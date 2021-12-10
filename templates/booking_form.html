@@ -1,0 +1,28 @@
+{% block content %}
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+<body>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('')">
+    <div class="overlay"></div>
+    <div class="container" id="top">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Booking Form</h1>
+            <span class="subheading">Fill Details for Booking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="container" id="bottom">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto content">
+                {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>
