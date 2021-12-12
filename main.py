@@ -1,17 +1,13 @@
-import sys
-
 from flask import Flask, render_template, redirect, url_for, flash, abort
 from functools import wraps
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
-from datetime import date
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from forms import BookingForm, RegisterForm, LoginForm, CommentForm, CancelForm, PaymentForm
-from flask_gravatar import Gravatar
 from district import dist_details
 
 app = Flask(__name__)
@@ -26,12 +22,8 @@ login_manager.init_app(app)
 def load_user(user_id):
     return Users.query.get(user_id)
 
-# gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
-
-
 ##CONNECT TO DB
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///travel_management.db'
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user_booking_details.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -187,8 +179,8 @@ def booking():
             no_of_psngr=booking_form.nopsngr.data,
             Email=booking_form.email.data,
             ph_no=booking_form.phonenum.data,
-            From=booking_form.fplace.data,
-            To=booking_form.tplace.data,
+            From=(booking_form.fplace.data).lower(),
+            To=(booking_form.tplace.data).lower(),
             Date=booking_form.date.data,
             Time=booking_form.time.data,
       )
